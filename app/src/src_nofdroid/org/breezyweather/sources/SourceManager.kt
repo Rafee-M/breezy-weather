@@ -49,6 +49,7 @@ import org.breezyweather.sources.nws.NwsService
 import org.breezyweather.sources.openmeteo.OpenMeteoService
 import org.breezyweather.sources.openweather.OpenWeatherService
 import org.breezyweather.sources.pirateweather.PirateWeatherService
+import org.breezyweather.sources.qweather.QWeatherService
 import org.breezyweather.sources.recosante.RecosanteService
 import org.breezyweather.sources.smhi.SmhiService
 import org.breezyweather.sources.wmosevereweather.WmoSevereWeatherService
@@ -75,6 +76,7 @@ class SourceManager @Inject constructor(
     openMeteoService: OpenMeteoService,
     openWeatherService: OpenWeatherService,
     pirateWeatherService: PirateWeatherService,
+    qWeatherService: QWeatherService,
     recosanteService: RecosanteService,
     smhiService: SmhiService,
     wmoSevereWeatherService: WmoSevereWeatherService
@@ -99,6 +101,7 @@ class SourceManager @Inject constructor(
         metNoService,
         openWeatherService,
         pirateWeatherService,
+        qWeatherService,
         hereService,
 
         // National sources supporting worldwide
